@@ -1,0 +1,96 @@
+<html>
+    <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <style>
+            p{
+                background-color: blue;
+                padding: 20px;
+            }
+            </style>
+    </head>
+<body>
+    <!-- <button id="btnsave">save</button>
+    <p id="p1"> this is paragraph</p>
+    <p class="sample"> this is paragraph</p>
+    <p> this is paragraph</p>
+    </body>
+    <script>
+
+           
+            
+           $('#btnsave').mouseout(function(){
+            $("p").css("background-color","blue")
+            $("#p1").html("New paragraph");
+            $(".sample").css("background-color","yellow")
+           
+           alert(dd)
+            }); -->
+      
+   <!-- <button id="btndiwn">slide up</button>
+   <p>hi i am going up</p>
+   <p>hi i am going up</p> -->
+   <!-- <button id="btnfade">fade toggle</button>
+   <button id="btnIN">fadein toggle</button>
+   <button id="btnOut">fadeOut toggle</button>
+   <p>hi i am going up</p>
+   <p>hi i am going up</p>
+
+  
+
+            </body>
+            
+            <script>
+            //     $('#btndiwn').click(function(){
+            //         $("p").slideToggle();
+            //      $("p").css("background-color","blue");
+            // })
+
+            $('#btnfade').click(function(){
+               
+              //  $("p").css("background-color","blue");
+                
+                $("p").fadeToggle(1000);
+
+            });
+            $('#btnIN').click(function(){
+               
+               
+               $("p").fadeIn(1500);
+           })
+
+           $('#btnOut').click(function(){
+               
+               
+               $("p").fadeOut(1500);
+               $("p").fadeTo(2000,0.4)
+           }) -->
+
+           <button id="btnzoomin">zoomin</button>&emsp;
+           <button id="btnzoomout">zoomout</button><br>
+           <img src="download.png" style="min-width: 200px; min-height: 300px; max-width: 500px; max-height: 500px">
+
+    
+</body>
+           <script>
+               $('#btnzoomin').click(function(){
+                   $("img").animate({
+                       width: "+=20px",
+                       height: "-=20px"
+                   });
+               });
+
+               $('#btnzoomout').click(function(){
+                   $("img").animate({
+                       top: "20px",
+                       width: "-=20px",
+                       height: "-=20px"
+                   });
+               });
+           
+           </script>
+
+
+
+            
+       
+
