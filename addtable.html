@@ -1,0 +1,52 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+    <style>
+            table, td {
+              border: 1px solid black;
+            }
+            </style>
+    </head>
+    <body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    
+
+ 
+</head>
+ <body>
+
+<p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
+
+ <table id="myTable">
+  
+</table>
+ <br>
+
+
+ <button type="button" onclick="myFunction()">Try it</button>
+</body>
+ <script>
+function myFunction() {
+   var table = document.getElementById("myTable");
+   var row = table.insertRow(0);
+   var cell1 = row.insertCell(0);
+   var cell2 = row.insertCell(1);
+   cell1.innerHTML = "NEW CELL1";
+   cell2.innerHTML = "NEW CELL2";
+ }
+ </script>
+
+ </body>
+ </html> 
