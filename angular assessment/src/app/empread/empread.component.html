@@ -1,0 +1,23 @@
+
+<div class="container mt-5">
+        <table class="table table:hover table:responsive table:secondary" style="align-content: center">
+          <thead>
+            <th>Department-id</th>
+            <th>name</th>
+            <th>Groupname</th>
+            <th>Modified_date</th>
+          </thead>
+       <tbody>
+         <tr *ngFor="let emp of emp.emplist">
+    
+           <td>{{emp.department_id}}</td>
+           <td>{{emp.de_name}}</td>
+           <td>{{emp.groupname}}</td>
+           <td>{{emp.modified_date}}</td>
+           <button class="btn btn-link" (click)="onDelete(emp)">delete</button>
+           <button  routerLink="/Edit/{{emp.department_id}}" (click)="edit(emp)" class="btn btn-link">Edit</button>
+         </tr>
+       </tbody>
+      </table>
+    
+    </div> 
