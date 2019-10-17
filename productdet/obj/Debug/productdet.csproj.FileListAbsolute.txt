@@ -1,0 +1,6 @@
+C:\Users\sjha67\source\repos\enumeration_demo\productdet\bin\Debug\productdet.exe.config
+C:\Users\sjha67\source\repos\enumeration_demo\productdet\bin\Debug\productdet.exe
+C:\Users\sjha67\source\repos\enumeration_demo\productdet\bin\Debug\productdet.pdb
+C:\Users\sjha67\source\repos\enumeration_demo\productdet\obj\Debug\productdet.exe
+C:\Users\sjha67\source\repos\enumeration_demo\productdet\obj\Debug\productdet.pdb
+C:\Users\sjha67\source\repos\enumeration_demo\productdet\obj\Debug\productdet.csprojAssemblyReference.cache
