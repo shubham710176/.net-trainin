@@ -1,0 +1,6 @@
+C:\Users\sjha67\source\repos\enumeration_demo\shapes\bin\Debug\shapes.exe.config
+C:\Users\sjha67\source\repos\enumeration_demo\shapes\bin\Debug\shapes.exe
+C:\Users\sjha67\source\repos\enumeration_demo\shapes\bin\Debug\shapes.pdb
+C:\Users\sjha67\source\repos\enumeration_demo\shapes\obj\Debug\shapes.csprojAssemblyReference.cache
+C:\Users\sjha67\source\repos\enumeration_demo\shapes\obj\Debug\shapes.exe
+C:\Users\sjha67\source\repos\enumeration_demo\shapes\obj\Debug\shapes.pdb
