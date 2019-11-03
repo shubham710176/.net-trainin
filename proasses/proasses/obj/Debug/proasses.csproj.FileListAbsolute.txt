@@ -1,0 +1,6 @@
+C:\Users\sjha67\source\repos\proasses\proasses\bin\Debug\proasses.exe.config
+C:\Users\sjha67\source\repos\proasses\proasses\bin\Debug\proasses.exe
+C:\Users\sjha67\source\repos\proasses\proasses\bin\Debug\proasses.pdb
+C:\Users\sjha67\source\repos\proasses\proasses\obj\Debug\proasses.csprojAssemblyReference.cache
+C:\Users\sjha67\source\repos\proasses\proasses\obj\Debug\proasses.exe
+C:\Users\sjha67\source\repos\proasses\proasses\obj\Debug\proasses.pdb
