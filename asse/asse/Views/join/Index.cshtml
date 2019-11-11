@@ -1,0 +1,35 @@
+﻿@model asse.Models.Employeedeparment
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+
+    
+<ul>
+    @foreach (var item in Model.employeedeparments)
+      {
+        <li>
+            Employee department:@item.DepartmentName
+        </li>
+        <li>
+            Employee location:@item.DepartmentLocation
+
+        </li>
+        <li>
+            Employee firstname:@item.EmployeeFName
+
+        </li>
+        <li>
+            Employee lastname:@item.EmployeelName
+
+        </li>
+
+
+     }
+</ul>
+    
+}
