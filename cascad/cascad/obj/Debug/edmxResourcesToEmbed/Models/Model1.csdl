@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbfirstdemoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblCountry">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tblstates2" Relationship="Self.FK__tblstates__coun___5CD6CB2B" FromRole="tblCountry" ToRole="tblstates2" />
+  </EntityType>
+  <EntityType Name="tblstates2">
+    <Key>
+      <PropertyRef Name="states1" />
+    </Key>
+    <Property Name="coun_id1" Type="Int32" />
+    <Property Name="states1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tblCountry" Relationship="Self.FK__tblstates__coun___5CD6CB2B" FromRole="tblstates2" ToRole="tblCountry" />
+  </EntityType>
+  <Association Name="FK__tblstates__coun___5CD6CB2B">
+    <End Role="tblCountry" Type="Self.tblCountry" Multiplicity="0..1" />
+    <End Role="tblstates2" Type="Self.tblstates2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCountry">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblstates2">
+        <PropertyRef Name="coun_id1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbfirstdemoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblCountries" EntityType="Self.tblCountry" />
+    <EntitySet Name="tblstates2" EntityType="Self.tblstates2" />
+    <AssociationSet Name="FK__tblstates__coun___5CD6CB2B" Association="Self.FK__tblstates__coun___5CD6CB2B">
+      <End Role="tblCountry" EntitySet="tblCountries" />
+      <End Role="tblstates2" EntitySet="tblstates2" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

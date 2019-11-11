@@ -1,0 +1,15 @@
+﻿@model cascad.Models.tblstates2
+
+@{
+    ViewBag.Title = "GetStates";
+}
+
+<h2>GetStates</h2>
+
+@if (ViewBag.States != null)
+{
+    foreach (var item in ViewBag.States)
+    {
+        <option value="@item">@item.Text</option>
+    }
+}

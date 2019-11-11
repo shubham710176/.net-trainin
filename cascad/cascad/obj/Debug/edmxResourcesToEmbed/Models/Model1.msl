@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbfirstdemoModelStoreContainer" CdmEntityContainer="dbfirstdemoEntities">
+    <EntitySetMapping Name="tblCountries">
+      <EntityTypeMapping TypeName="dbfirstdemoModel.tblCountry">
+        <MappingFragment StoreEntitySet="tblCountry">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblstates2">
+      <EntityTypeMapping TypeName="dbfirstdemoModel.tblstates2">
+        <MappingFragment StoreEntitySet="tblstates2">
+          <ScalarProperty Name="coun_id1" ColumnName="coun_id1" />
+          <ScalarProperty Name="states1" ColumnName="states1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,38 @@
+﻿
+ @model cascad.Models.ClassPAR
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@if (ViewBag.Countries != null)
+{
+    @Html.DropDownList("Cid", @ViewBag.Countries as SelectList, "-- select Country--", new { @class = "form-control" })
+}
+@Html.DropDownListFor(m => m.Sid, new SelectList(""), "-- select State--", new { @class = "form-control" })
+
+
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#Cid").change(function () {
+            var countryid = document.getElementById("Cid").value;
+          //  alert(countryid)
+            debugger
+            $.ajax({
+                type: "post",
+                url: "/Home/GetStates?cid=" + countryid,
+                contentType: "html",
+                success: function (response) {
+               //     debugger
+                    $("#Sid").empty();
+                    $("#Sid").append(response)
+                }
+            })
+        })
+    })
+
+</script>
+
+

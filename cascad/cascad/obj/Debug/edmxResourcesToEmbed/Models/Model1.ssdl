@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbfirstdemoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblCountry">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="tblstates2">
+    <Key>
+      <PropertyRef Name="states1" />
+    </Key>
+    <Property Name="coun_id1" Type="int" />
+    <Property Name="states1" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__tblstates__coun___5CD6CB2B">
+    <End Role="tblCountry" Type="Self.tblCountry" Multiplicity="0..1" />
+    <End Role="tblstates2" Type="Self.tblstates2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCountry">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblstates2">
+        <PropertyRef Name="coun_id1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbfirstdemoModelStoreContainer">
+    <EntitySet Name="tblCountry" EntityType="Self.tblCountry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblstates2" EntityType="Self.tblstates2" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__tblstates__coun___5CD6CB2B" Association="Self.FK__tblstates__coun___5CD6CB2B">
+      <End Role="tblCountry" EntitySet="tblCountry" />
+      <End Role="tblstates2" EntitySet="tblstates2" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
